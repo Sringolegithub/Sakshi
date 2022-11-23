@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	background-image: url(images/i7.jpg);
+	/* background-color: rgb(190, 66, 107); */
+	/* background-blend-mode: difference; */
+	/* background: fixed; */
+	/* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+}
+
+header {
+	height: 100vh;
+	width: 100%;
+	/* background-image: url(images/i7.jpg); */
+	background-color: transparent;
+	background-position: center;
+	background-size: cover;
+
+	background-attachment: fixed;
+	position: relative;
+}
+
+nav {
+	display: flex;
+	padding: 2% 6%;
+	align-items: center;
+	justify-content: space-between;
+	/* background-image: url(images/i7.jpg); */
+	/* clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%); */
+}
+
+.nav_links {
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li {
+	position: static;
+	display: inline-flex;
+	list-style: none;
+	padding: 8px 12px;
+	text-align: right;
+}
+
+.nav-links ul li a {
+
+	background-position: 0rem;
+	text-align: right;
+	text-decoration: none;
+	color: rgb(212, 5, 109);
+	font-size: 20px;
+	gap: 2px 2px;
+}
+
+.nav-links ul li a::after {
+	content: '';
+	width: 0px;
+	height: 2px;
+	background-color: rgb(231, 71, 95);
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li :hover::after {
+	width: 100%;
+}
+
+.text-box {
+	width: 90%;
+	color: rgb(247, 11, 50);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	/* background-color: rgb(243, 247, 250); */
+}
+
+.text-box h1 {
+	font-size: 50px;
+	/* background-color: aliceblue; */
+}
+
+.text-box p {
+	margin: 10px 0 40px;
+	font-size: 18px;
+	color: black;
+	/* background-color: aliceblue; */
+}
+
+.visit {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	border: 1px solid;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: solid 0.5px;
+}
+
+.visit:hover {
+	border: 1px solid;
+	background-color: hotpink;
+	transition: 1s;
+}
+
+
+
+
+@media(max-width:700px) {
+	.text-box h1 {
+		font-size: 20px;
+	}
+
+	.nav-links ul li {
+		display: block;
+	}
+
+	.nav-links {
+		position: absolute;
+		background: lightpink;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: 0px;
+		text-align: left;
+		z-index: 2;
+
+	}
+}

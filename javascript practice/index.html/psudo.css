@@ -1,0 +1,109 @@
+/*selector:psudo class*/
+a{
+    /*margin-right: 50px;
+    position: absolute;
+    float: right ;
+    font-size: 20px;
+    margin:top;
+    text-decoration:none;
+    padding:5px 10px;
+    border:1px solid green;
+    border-radius:10px*/
+
+}
+a:link{
+
+  color: tomato;
+}
+
+
+a:active{
+    background-color: blue;
+
+}
+a:hover{
+    background-color: blue;
+}
+a:visited{
+    color:darkorange
+}
+/* a::selection */
+/*margin collapse*/
+.box1{
+	margin-bottom: 50px;
+    height: 200px;
+    background-color: aqua;
+
+}
+.box2{
+	margin-top: 50px;
+    height: 200px;
+    background-color: blue;
+}
+/*box_sizing css*/ 
+hr{
+    width: 500px;
+    margin-left:0 ;
+    border: 1px solid;
+}
+.box1{
+    width: 500px;
+    margin: 10px;
+    border: 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: aqua;
+
+}
+.box2{
+    width: 500px;
+    margin: 10px;
+    border: 1px solid;
+    padding: 10px;
+    
+    background-color: aquamarine;
+
+}
+/*psudo elements*/
+body :not(.myprg){
+    color: red;
+}
+/*specific*/
+:root{
+    background-color: gray;
+    color: blue;
+}
+html{
+   
+    color: blueviolet;
+}
+div:empty{
+    height: 10px;
+    background-color: black;
+    border: 1px solid;
+}
+p::first-line{
+    color: blueviolet;
+}
+p::first-letter
+{
+    color: black;
+
+}
+::selection{
+    color: aqua;
+}
+/* content mandetari (jaruri) */
+p::before{
+    content: "hello";
+    font-size: 20px;
+    background-color: blanchedalmond;
+    border:1px solid ;
+}
+p::after{
+    content: "hiiiiii";
+    font-size: 20px;
+    background-color: white;
+}
+/*media */
+

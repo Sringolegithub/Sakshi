@@ -1,0 +1,17 @@
+.background-black {
+    background-color: black;
+    color: aliceblue;
+}
+
+.background-white {
+    background-color: rgb(180, 40, 40);
+    color: black;
+}
+
+/* .background-black {
+    background-color: black;
+} */
+
+/* .background-white {
+    background-color: white;
+} */

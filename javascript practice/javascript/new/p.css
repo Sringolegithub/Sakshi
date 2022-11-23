@@ -1,0 +1,23 @@
+/* body{
+   border:0px;
+   padding: 10px;
+} */
+.heading{
+    border: 5px black;
+    padding: 10px;
+}
+.font{
+    font-size: 20px;
+    color: gray;
+}
+.bgdark{
+    background-color:rgb(141, 211, 35) ;
+}
+.container{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+/*  */
+/* .display-none{
+    display: inline-block;
+} */
